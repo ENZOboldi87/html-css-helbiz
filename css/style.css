@@ -1,0 +1,92 @@
+/* general rules */
+
+body ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+body ul li {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 26px 11px;
+  margin: 4px;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ends general rules */
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
+
+header .top-header .container {
+  margin-top: 0;
+}
+
+header .top-header .container .image-header {
+  line-height: 80px;
+}
+
+header ul li:nth-last-child(-n+3) {
+ border-right: 1px solid black;
+ padding: 10px;
+}
+
+#jumbotron {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  background-position: center;
+  margin-top: 80px;
+}
+
+#jumbotron .jumbo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 26px;
+}
+
+#bottom-jumbo .img-under-products {
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  height: 700px;
+  margin: 50px 0;
+  background-position: center;
+
+}
+
+.container .bikes img.text-images-bikes {
+  height: 25px;
+
+}
+
+.container .bikes img.images-bikes {
+  width: 30%;
+}
+
+#content-bottom-jumbo .container .iphone-image img {
+  height: 753px;
+  bottom: 480px;
+  right: 16%;
+  position: relative;
+}
