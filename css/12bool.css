@@ -227,7 +227,7 @@
 /* ends column md */
 
 /* column xs  */
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
 
   .col-xs-1 {
     width: calc((100% / 12) * 1);

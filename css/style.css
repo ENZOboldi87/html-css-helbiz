@@ -21,7 +21,7 @@ body {
  }
 
 /* media query */
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (max-width: 767px) {
   #hamnav {
     text-align: right;
   }
@@ -33,17 +33,21 @@ body {
     padding: 9px;
   }
 
-  /* Break down menu items into vertical */
   .hamitems li {
     padding: 8px;
     font-size: 20px;
   }
 
   /* Toggle Show/Hide Menu */
-  .hamitems { display: none; }
-  #hamnav input:checked ~ .hamitems { display: block; }
-}
+  .hamitems {
+    display: none;
+   }
 
+  #hamnav input:checked ~ .hamitems {
+    display: block;
+  }
+
+}
 
 /* header */
 header {
