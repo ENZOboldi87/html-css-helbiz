@@ -3,35 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HelBiz</title>
   </head>
   <body>
+                      <!-- header -->
     <header>
       <div class="top-header">
         <div class="container">
-          <div class="col-lg-5 image-header">
-            <img src="img/helbiz-new-logo-black.svg" alt="logo">
+        <!-- left logo -->
+          <div class="col-lg-1 col-xs-1">
+            <div class="image-header">
+              <img src="img/helbiz-new-logo-black.svg" alt="logo">
+            </div>
           </div>
-          <div class="col-lg-7">
-            <nav>
-              <ul>
-                <li><a href="#">helbizgo</a></li>
-                <li><a href="#">helbizbike</a></li>
-                <li><a href="#">helbizair</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">eng</a></li>
-                <li><a href="#">ita</a></li>
-                <li><a href="#">es</a></li>
-              </ul>
+          <!-- ends left logo -->
+          <!-- right menu -->
+          <div class="col-lg-11 col-xs-11">
+            <nav id="hamnav">
+              <label for="hamburger">&#9776;</label>
+              <input type="checkbox" id="hamburger"/>
+                <ul class="hamitems">
+                  <li><a href="#">helbizgo</a></li>
+                  <li><a href="#">helbizcar</a></li>
+                  <li><a href="#">helbizair</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">shop</a></li>
+                  <li><a href="#">eng</a></li>
+                  <li><a href="#">ita</a></li>
+                  <li><a href="#">es</a></li>
+                </ul>
             </nav>
           </div>
+          <!-- ends right menu -->
         </div>
       </div>
     </header>
+    <!-- ends header -->
+    <!-- main -->
     <main>
+      <!-- jumbotron -->
       <section id="jumbotron">
         <div class="container">
           <div class="col-lg-12 jumbo-text">
@@ -42,39 +55,202 @@
           </div>
         </div>
       </section>
+      <!-- ends jumbotron -->
+      <!-- products -->
       <section id="products">
         <div class="container">
-          <div class="col-lg-6 bikes">
-            <a href="#"><img class="text-images-bikes" src="img/HGO_blk_trans.svg" alt=""></a>
-            <p>Seamless E-Scooter sharing globally.</p>
-            <p><a href="#">Learn More</a></p>
-            <img class="images-bikes" src="img/HelbizGOxSegway.jpg" alt="">
+          <!-- left column -->
+          <div class="col-lg-6 col-md-12">
+            <div class="bikes">
+              <img class="text-images-bikes" src="img/HGO_blk_trans.svg" alt="">
+              <p>Seamless E-Scooter sharing globally.</p>
+              <p><a href="#">Learn More</a></p>
+              <img class="images-bikes" src="img/HelbizGOxSegway.jpg" alt="">
+            </div>
           </div>
-          <div class="col-lg-6 bikes">
-            <h2><a href="#">helbizgo</a></h2>
-            <p>Seamless E-Scooter sharing globally.</p>
-            <a href="#">Learn More</a>
-            <img class="images-bikes" src="" alt="">
+          <!-- ends left column -->
+          <!-- right column -->
+          <div class="col-lg-6 col-md-12">
+            <div class="bikes">
+              <img class="text-images-bikes" src="img/HBIKE_blk_trans.svg" alt="">
+              <p>Seamless E-Scooter sharing globally.</p>
+              <p><a href="#">Learn More</a></p>
+              <img class="images-bikes" src="img/HelbizBike-2.jpg" alt="">
+            </div>
           </div>
+          <!-- ends right column -->
         </div>
       </section>
-      <section id="bottom-jumbo">
-        <div class="img-under-products">
-        </div>
+      <!-- ends products -->
+      <!-- middle background -->
+      <section id="middle-background">
+        <div class="middle-background"></div>
       </section>
+      <!-- ends middle background -->
+      <!-- content bottom jumbo -->
       <section id="content-bottom-jumbo">
         <div class="container">
-          <div class="col-lg-4">
-            <h2>How does Helbiz work?</h2>
+          <!-- left column -->
+          <div class="col-lg-3">
+            <div class="text-left">
+              <h2>How does Helbiz work?</h2>
+            </div>
           </div>
-          <div class="col-lg-4 iphone-image">
-            <img src="img/iphone.png" alt="">
+          <!-- ends left column -->
+          <!-- center column -->
+          <div class="col-lg-offset-1 col-lg-3 col-md-12 special">
+            <div class="iphone-image">
+              <img src="img/iphone.png" alt="">
+            </div>
           </div>
-          <div class="col-lg-4">
-            <h2>Step 1 Browse the vehicles near you</h2>
+          <!-- ends center column -->
+          <!-- right column -->
+          <div class=" col-lg-offset-2 col-lg-3 col-md-12">
+            <div class="text-right">
+              <h3>Step 1</h3>
+              <p>leave curbside when finished</p>
+            </div>
+          </div>
+          <!-- ends right column -->
+        </div>
+      </section>
+      <!-- ens content bottom jumbo -->
+      <!-- blocks content -->
+      <section id="blocks-content">
+        <!-- block one  -->
+        <div class="container">
+          <div class="col-lg-12">
+            <div class="container">
+              <div class="col-lg-offset-6 col-lg-6 col-md-12">
+                <div class="block-one text-box">
+                  <h2>Smart mobility on two wheels</h2>
+                  <p>A cleaner and more convenient alternative to get around your city</p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ends block one -->
+        <!-- block two -->
+        <div class="container">
+          <div class="col-lg-6 col-md-12">
+            <div class="block-two">
+              <h2>Get the app</h2>
+              <p>Download the app and start riding today</p>
+              <a href="#">iOS ></a>
+              <a href="#">Android ></a>
+              <img src="img/HelbiZAPP.png" alt="">
+            </div>
+          </div>
+          <!-- ends block two -->
+          <!-- block three -->
+          <div class="col-lg-6 col-md-12">
+            <div class="block-three">
+              <h2>Find us around</h2>
+              <p>Find us around the globe</p>
+              <a href="#">Out cities</a>
+            </div>
+          </div>
+          <!-- ends block three -->
+        </div>
+      </section>
+      <!-- ends block content -->
+      <!-- social-hub -->
+      <section id="social-hub">
+        <div class="container">
+          <div class="col-lg-12">
+            <div class="social-background">
+              <div class="social-content-hub">
+                <div class="social-text">
+                  <h2>#HelbizFamily</h2>
+                  <ul class="social-menu">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- ends social hub -->
     </main>
+    <!-- ends main -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="col-lg-3 col-md-12">
+          <div class="image-nav-footer">
+            <a href="#"> <img src="img/helbiz-new-logo-white.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <ul class="list-footer">
+            <li>product</li>
+            <li> <a href="#">HellbizGo</a></li>
+            <li><a href="#">HelbizCar</a></li>
+            <li><a href="#">HelbizAir</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <ul class="list-footer">
+            <li>info</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Company info</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Franchise</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <ul class="list-footer">
+            <li>helbiz</li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Twitter Support</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Media Assets</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container divisor">
+        <div class="col-lg-12 col-md-12 footer-divisor">
+          <div class="container divisor">
+            <div class="col-lg-3 col-md-12">
+              <div class="social-nav">
+                <ul class="social-menu">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="social-info">
+                <a href="#">Terms & Conditions</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="social-info">
+                <a href="#">Press & News</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="social-info">
+                <a href="#">2019Helbiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ends footer -->
   </body>
 </html>

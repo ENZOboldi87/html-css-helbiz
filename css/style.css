@@ -1,17 +1,10 @@
 /* general rules */
-
 body ul {
   list-style-type: none;
-  display: inline-block;
 }
 
 body ul li {
   display: inline-block;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 26px 11px;
-  margin: 4px;
 }
 
 body a {
@@ -23,7 +16,34 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* ends general rules */
+#hamnav label, #hamburger {
+  display: none;
+ }
+
+/* media query */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #hamnav {
+    text-align: right;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 9px;
+  }
+
+  /* Break down menu items into vertical */
+  .hamitems li {
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  /* Toggle Show/Hide Menu */
+  .hamitems { display: none; }
+  #hamnav input:checked ~ .hamitems { display: block; }
+}
+
 
 /* header */
 header {
@@ -35,26 +55,48 @@ header {
   z-index: 1;
 }
 
+header #hamnav {
+  text-align: right;
+}
+
+header .top-header {
+  margin: 10px;
+}
+
 header .top-header .container {
   margin-top: 0;
 }
 
-header .top-header .container .image-header {
-  line-height: 80px;
+header .top-header .image-header {
+  padding: 10px;
 }
 
-header ul li:nth-last-child(-n+3) {
- border-right: 1px solid black;
- padding: 10px;
+header ul li {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  margin: 5px;
 }
 
+header ul li:nth-child(6),
+header ul li:nth-child(7) {
+  border-right: 1px solid black;
+  padding: 0px 7px 0px 0px;
+  margin: 4px;
+}
+
+header ul li:nth-last-child(1) {
+  padding: 0px;
+}
+/* ends header */
+
+/* jumbotron */
 #jumbotron {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   height: 600px;
   position: relative;
   background-position: center;
-  margin-top: 80px;
 }
 
 #jumbotron .jumbo-text {
@@ -66,27 +108,240 @@ header ul li:nth-last-child(-n+3) {
   font-size: 26px;
 }
 
-#bottom-jumbo .img-under-products {
+#jumbotron .jumbo-text h1 {
+  font-size: 50px;
+}
+
+#jumbotron .jumbo-text p {
+  font-size: 15px;
+  padding: 15px 0;
+}
+/* ends jumbotron */
+
+/* products */
+#products .container .bikes {
+  background: #fafafa;
+  padding: 60px 0px;
+  margin-left: 35px;
+}
+
+#products .container .bikes p {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+#products .container .bikes p a:hover {
+  text-decoration: underline;
+  color: #0070c8;
+}
+
+#products .container .bikes img.text-images-bikes {
+  height: 50px;
+  padding: 13px;
+}
+
+#products .container .bikes img.images-bikes {
+  height: 250px;
+}
+/* ends products */
+
+/* middle background */
+#middle-background .middle-background {
   background-image: url(../img/HelbizBanner.jpg);
   background-size: cover;
   height: 700px;
   margin: 50px 0;
   background-position: center;
+}
+/* ends middle background */
 
+/* content-bottom jumbo */
+#content-bottom-jumbo .text-left {
+  padding: 90px 0 0 10px;
+  text-align: left;
+  font-size: 24px;
 }
 
-.container .bikes img.text-images-bikes {
-  height: 25px;
-
+#content-bottom-jumbo .text-right {
+  text-align: left;
+  padding-top: 100px;
 }
 
-.container .bikes img.images-bikes {
-  width: 30%;
+#content-bottom-jumbo .text-right h2 {
+  padding: 10px 0;
+}
+
+#content-bottom-jumbo .container .iphone-image {
+  height: 300px;
 }
 
 #content-bottom-jumbo .container .iphone-image img {
-  height: 753px;
-  bottom: 480px;
-  right: 16%;
+  bottom: 550px;
+  right: 30%;
   position: relative;
+  height: 900px;
+}
+/* ends content-bottom jumbo */
+
+/* blocks content */
+#blocks-content {
+  color: white;
+}
+
+#blocks-content h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding: 26px;
+}
+
+#blocks-content .container .col-lg-12 {
+  height: 500px;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-size: cover;
+  max-width: 100%;
+}
+
+#blocks-content .container .text-box {
+  text-align: center;
+  color: white;
+  padding: 50px 140px;
+}
+
+#blocks-content .container .text-box p {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+#blocks-content .container .text-box a {
+
+}
+
+#blocks-content .container .block-two {
+  background: linear-gradient(#41566a,#252f38) 50%;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  color: white;
+  min-height: 500px;
+  position: relative;
+}
+
+#blocks-content .container .block-two .iphone-image {
+  padding: 10px;
+}
+
+#blocks-content .container .block-two img{
+  position: absolute;
+  height: 70%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#blocks-content .container .col-lg-6 .block-three {
+  background-image: url(../img/Cities-1500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  margin-left: 15px;
+}
+/* end blocks content */
+
+/* social hub */
+#social-hub {
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  height: 700px;
+  margin: 50px 0;
+  background-position: center;
+  position: relative;
+}
+
+#social-hub .social-background {
+  height: 700px
+}
+
+#social-hub .social-background .social-content-hub {
+  height: 200px;
+  width: 450px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#social-hub .social-background .social-content-hub .social-text {
+  padding: 53px;
+}
+
+#social-hub .social-background .social-content-hub .social-text h2 {
+  font-size: 35px;
+}
+
+#social-hub .social-background .social-content-hub .social-text ul.social-menu li i {
+  font-size: 35px;
+  padding: 10px 15px;
+}
+/* ends social hub */
+
+/* footer */
+footer {
+  background: black;
+  padding: 100px 0;
+}
+
+footer .image-nav-footer {
+  text-align: left;
+  padding-left: 10px;
+}
+
+footer ul.list-footer {
+  text-align: left;
+  color:#696969;
+}
+
+footer ul.list-footer li {
+ padding: 0px 0px 20px 0px;
+ display: block;
+}
+
+footer ul.list-footer li:first-child {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+}
+
+footer .divisor {
+  margin-top: 0;
+}
+
+footer .footer-divisor {
+  border-top: 2px solid hsla(0,0%,100%,.1);
+  border-bottom: 2px solid hsla(0,0%,100%,.1);
+  margin-top: 30px;
+}
+
+footer .social-nav ul.social-menu {
+  text-align: left;
+  padding: 37px 0;
+}
+
+footer .social-nav ul.social-menu li {
+  padding: 10px;
+}
+
+footer .social-nav ul.social-menu li i {
+  font-size: 20px;
+  color: white;
+}
+
+footer .social-info {
+  color: white;
+  text-align: left;
+  padding: 50px 0;
+}
+
+footer .social-info a {
+  font-size: 12px;
 }

@@ -12,7 +12,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
@@ -21,11 +21,7 @@
 [class*="col-"] {
   float: left;
 }
-
-
-
 /* ends general rules */
-
 
 /* column lg */
 @media all and (min-width: 992px) {
@@ -129,7 +125,7 @@
 /* ends column lg */
 
 /* column md */
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
   .col-md-1 {
     width: calc((100% / 12) * 1);
